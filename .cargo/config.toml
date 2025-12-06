@@ -1,0 +1,5 @@
+[build]
+rustflags = ["-C", "target-feature=+crt-static"]
+
+[env]
+BINDGEN_EXTRA_CLANG_ARGS = "-D_MSC_VER=1937 -D_AMD64_=1 -D_M_AMD64=1 -D_WIN64=1 -D_WIN32_WINNT=0x0A00 -DWINVER=0x0A00"
